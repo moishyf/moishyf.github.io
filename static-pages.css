@@ -1,0 +1,101 @@
+@font-face {
+  font-family: Heebo;
+  src: url('/fonts/heebo-hebrew.woff2') format('woff2');
+  font-weight: 100 900;
+  font-display: swap;
+  unicode-range: U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #101311;
+  color: #edf0e9;
+  font: 16px/1.8 system-ui;
+}
+main {
+  max-width: 850px;
+  margin: 8vh auto;
+  padding: 30px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 45px;
+}
+button {
+  font: inherit;
+  border: 1px solid #66745a;
+  background: transparent;
+  color: #b7e9cf;
+  border-radius: 25px;
+  padding: 8px 16px;
+  cursor: pointer;
+  min-height: 44px;
+}
+small {
+  font: 11px monospace;
+  letter-spacing: 0.1em;
+  color: #b7e9cf;
+}
+h1 {
+  font-size: clamp(38px, 7vw, 70px);
+  line-height: 1.1;
+  font-weight: 450;
+  letter-spacing: -0.045em;
+  margin: 22px 0 35px;
+}
+h2 {
+  font-size: 22px;
+  font-weight: 500;
+  margin: 40px 0 12px;
+}
+p,
+li {
+  color: #b7c3ae;
+}
+a {
+  color: #b7e9cf;
+  text-underline-offset: 5px;
+}
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid #b7e9cf;
+  outline-offset: 6px;
+}
+.license-links {
+  display: flex;
+  gap: 12px 25px;
+  flex-wrap: wrap;
+  padding: 20px 0;
+}
+.return {
+  display: inline-block;
+  margin-top: 30px;
+}
+html[lang='he'] body {
+  font-family: Heebo, system-ui;
+}
+html[lang='he'] h1 {
+  font-weight: 350;
+  letter-spacing: -0.025em;
+}
+.error-page {
+  max-width: 720px;
+  padding-top: 8vh;
+}
+@media (max-width: 600px) {
+  main {
+    padding: 24px;
+    margin-top: 3vh;
+  }
+  h1 {
+    font-size: 43px;
+  }
+  .error-page {
+    padding-top: 5vh;
+  }
+}
